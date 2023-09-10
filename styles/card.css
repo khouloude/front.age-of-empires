@@ -1,0 +1,62 @@
+/* styles.css */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.card {
+  width: calc(33.33% - 40px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #c8b8a5;
+  color: white;
+  position: relative;
+  height: 150px;
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgb(158 158 158 / 62%);
+}
+
+.card .card-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card:hover {
+  background-color: #222;
+}
+
+button.btn.btn-primary {
+  border: 1px solid #222;
+  position: absolute;
+  bottom: -20px;
+  width: 70%;
+  padding: 10px;
+  background-color: #222;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+}
+
+.card:hover button.btn.btn-primary {
+  background-color: #c8b8a5;
+  border: 1px solid #c8b8a5;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
