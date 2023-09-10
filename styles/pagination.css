@@ -1,0 +1,39 @@
+.container {
+  padding: 0 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.page-link {
+  cursor: pointer;
+}
+
+/* pagination pageItem */
+.page-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* pagination page item when active */
+.page-item-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #d19f63;
+}
